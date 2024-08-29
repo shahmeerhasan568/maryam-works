@@ -1,0 +1,412 @@
+* {
+    margin: 0% 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: pink;
+    overflow: hidden;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.giftcontainer {
+    position: relative;
+    left: 25px;
+
+}
+
+.giftcontainer::before {
+    content: '';
+    position: absolute;
+    background: grey;
+    width: 170px;
+    height: 20px;
+    border-radius: 50%;
+    top: 97px;
+    left: 84px;
+}
+
+
+.gift {
+
+    width: 160px;
+    height: 110px;
+    position: absolute;
+    background: rgb(48, 151, 129);
+    left: 90px;
+
+}
+
+.gift::before {
+    content: '';
+    width: 25px;
+    height: 14vh;
+    position: absolute;
+    background: rgb(75, 45, 50);
+    left: 72.5px;
+}
+
+.gift::after {
+    content: '';
+    position: absolute;
+    box-shadow: inset 0 10px rgba(0, 0, 0, 0.3);
+    height: 100px;
+    width: 160px;
+
+}
+
+#click {
+    display: none;
+
+}
+
+.click {
+    position: absolute;
+    background: rgb(15, 131, 112);
+    height: 40px;
+    ;
+    width: 170px;
+    ;
+    top: -40px;
+    ;
+    left: -4.55555px;
+    ;
+    transform-origin: bottom left;
+    transition: 0.4;
+    cursor: pointer;
+}
+
+.click::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 40px;
+    background: rgb(75, 45, 50);
+    left: 77px;
+}
+
+.click::after {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 0px;
+    border-bottom: 30px solid rgb(75, 45, 50);
+    border-top: 30px solid rgb(75, 45, 50);
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(-90deg);
+    left: 73px;
+    top: -46px;
+}
+
+#click:checked+.click {
+    transform: rotate(-110deg) scale(0.85);
+}
+
+#click:checked~.wishes {
+    transform: translateY(120px);
+}
+
+.wishes {
+    position: absolute;
+    transition: -5s;
+    color: #333f12;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    z-index: -1;
+    left: 10px;
+    color: #640e0e;
+    text-shadow: 0 0 10px;
+}
+
+#header {
+    overflow: hidden;
+    width: 100vw;
+    height: 10vh;
+    background: rgb(202, 63, 140);
+    display: flex;
+    top: 0%;
+    align-items: center;
+    position: absolute;
+    font-size: 30px;
+    padding: 20px;
+    justify-content: center;
+}
+
+#left-center {
+
+    width: 45vw;
+    height: 65vh;
+    background: lightyellow;
+    border: 1vw solid lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    position: absolute;
+    left: 8%;
+    bottom: 15%;
+    font-size: 20px;
+    color: black;
+}
+
+#right-center {
+    width: 300px;
+    height: 70vh;
+    background: lightyellow;
+    border: solid lightcoral;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+    position: absolute;
+    right: 10px;
+    bottom: 90px;
+    padding: 20px;
+
+}
+
+input {
+    width: 100%;
+}
+    * {
+        margin: 0% 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        background: pink;
+        overflow: hidden;
+        font-family: sans-serif;
+        position: relative;
+    }
+
+    .giftcontainer {
+        position: relative;
+        left: 25px;
+
+    }
+
+    .giftcontainer::before {
+        content: '';
+        position: absolute;
+        background: grey;
+        width: 170px;
+        height: 20px;
+        border-radius: 50%;
+        top: 97px;
+        left: 84px;
+    }
+
+
+    .gift {
+
+        width: 160px;
+        height: 110px;
+        position: absolute;
+        background: rgb(48, 151, 129);
+        left: 55px;
+        top: 3px;
+
+    }
+
+    .gift::before {
+        content: '';
+        width: 25px;
+        height: 14vh;
+        position: absolute;
+        background: rgb(75, 45, 50);
+        left: 72.5px;
+    }
+
+    .gift::after {
+        content: '';
+        position: absolute;
+        box-shadow: inset 0 10px rgba(0, 0, 0, 0.3);
+        height: 100px;
+        width: 160px;
+
+    }
+
+    #click {
+        display: none;
+
+    }
+
+    .click {
+        position: absolute;
+        background: rgb(15, 131, 112);
+        height: 40px;
+        width: 170px;
+        top: -40px;
+        left: -4.55555px;
+        transform-origin: bottom left;
+        transition: 0.4;
+        cursor: pointer;
+    }
+
+    .click::before {
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: 40px;
+        background: rgb(75, 45, 50);
+        left: 77px;
+    }
+
+    .click::after {
+        position: absolute;
+        content: '';
+        width: 5px;
+        height: 0px;
+        border-bottom: 30px solid rgb(75, 45, 50);
+        border-top: 30px solid rgb(75, 45, 50);
+        border-left: 0px solid transparent;
+        border-right: 30px solid transparent;
+        transform: rotate(-90deg);
+        left: 73px;
+        top: -46px;
+    }
+
+    #click:checked+.click {
+        transform: rotate(-110deg) scale(0.85);
+    }
+
+    #click:checked~.wishes {
+        transform: translateY(120px);
+    }
+
+    .wishes {
+        position: absolute;
+        transition: -5s;
+        color: #333f12;
+        font-size: 25px;
+        text-transform: capitalize;
+        text-align: center;
+        z-index: -1;
+        left: 10px;
+        color: #640e0e;
+        text-shadow: 0 0 10px;
+    }
+
+    #header {
+        overflow: hidden;
+        width: 100vw;
+        height: 10vh;
+        background: rgb(202, 63, 140);
+        display: flex;
+        top: 0%;
+        align-items: center;
+        position: absolute;
+        font-size: 30px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    #left-center {
+
+        width: 45vw;
+        height: 65vh;
+        background: lightyellow;
+        border: 1vw solid lightcoral;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 2;
+        position: absolute;
+        left: 2%;
+        bottom: 15%;
+        font-size: 20px;
+        color: black;
+    }
+
+    #right-center {
+        width: 300px;
+        height: 70vh;
+        background: lightyellow;
+        border: solid lightcoral;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        line-height: 3;
+        position: absolute;
+        right: 10px;
+        bottom: 90px;
+        padding: 20px;
+
+    }
+
+    input {
+        width: 100%;
+        height: 20%;
+        background-color: #fff;
+        color: blue;
+        font-size: medium;
+    }
+    input:hover{
+        background-color: blue;
+        color: white;
+        font-size: medium;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width:500px) {
+        #header{
+            font-size: 17px;
+            width: 10%;
+            background-color: #640e0e;
+            width: 100vw;
+            left: 40px;
+            margin-right: 200px;
+        }
+        #left-center{
+            /* font-size: medium; */
+            line-height: 29px;
+            height: 600px;
+            width: 80vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            left: 60px;
+        }
+        #right-center{
+            
+            height: 600px;
+            width: 80vw;
+            align-items: end;
+            top: 600px;
+            margin-top: 300px;
+            
+
+        }
+        .giftcontainer{
+            margin-top: 800px;
+            margin-right: 300px;
+        }
+    }
